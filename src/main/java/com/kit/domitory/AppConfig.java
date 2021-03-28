@@ -7,9 +7,11 @@ import com.kit.domitory.fee.NewFeePolicy;
 import com.kit.domitory.fee.OldFeePolicy;
 import com.kit.domitory.member.*;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan // 이거 있으면 Bean 안붙여줘도 자동으로 bean스캔함
 public class AppConfig {
 
     @Bean
